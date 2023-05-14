@@ -1,0 +1,196 @@
+row {
+    overflow: hidden !important;
+}
+body {
+    background-color: #141414 !important;
+}
+
+/* Navbar */
+#logo {
+    width: 100px;
+}
+
+.navbar {
+    align-items: center;
+    background-color: #141414 !important;
+}
+
+.burger {
+    color: white;
+    background-color: green;
+}
+
+.user-menu {
+    height: 100%;
+    align-items: center;
+}
+
+#avatar {
+    width: 45px;
+    padding-right: 4px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.user-dropdown {
+    opacity: 0.9;
+    background-color: #141414 !important;
+}
+
+.dropdown-divider {
+    color: white;
+}
+
+.fill {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+
+
+
+/*TV Shows, dropdown genres, right icons*/
+#genres {
+    border: 1px white solid;
+    background-color: transparent;
+    font-size: 0.8em;
+}
+
+.top-bar-dx {
+    border-radius: none !important;
+    display: flex;
+}
+
+.top-bar-dx button {
+    border: solid 1px;
+}
+
+.top-bar-dx button span {
+    font-size: 0.9em;
+
+}
+
+.genres-dropdown {
+    opacity: 0.9;
+    background-color: #141414 !important;
+    border-radius: 0px !important;
+    border: solid 1px white !important;
+    font-size: 0.8rem;
+}
+
+/*CAROSELLI*/
+/* @media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+} */
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
+
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+    transform: translateX(0);
+}
+
+/* Fine animazione caroselli, non sono riuscto a dare allo slide l'effetto che desideravo */
+
+
+.card {
+    border: none !important;
+    margin: 3px;
+}
+
+.card:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: transform 0.4s linear 0.7s;
+    z-index: 1;
+}
+
+.cover {
+    width: 100%;
+}
+
+
+.visible {
+    overflow: visible !important;
+}
+
+
+/* KEYFRAME PER L'ANIMAZIONE DEI CAROSELLI */
+.image-animation, h6 {
+    animation: enter-animation 1.5s 1;
+}
+
+@keyframes enter-animation {
+    0% {
+        transform: translateY(180px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+/* FOOTER */
+footer {
+    margin-top: 80px;
+}
+.bottom-links{
+    line-height: 2;
+    padding-top: 10px;
+}
+.social-icons img {
+    width: 20px;
+    margin-right: 4px;
+    padding-bottom: 20px;
+}
+.bottom-links a {
+    color: grey;
+    text-decoration: none;
+    font-size: 0.7rem;
+    display: block;
+}
+#service-code {
+    color: gray;
+    background-color: transparent;
+    border: grey solid 1px;
+    font-size: 0.7rem;
+    padding: 5px;
+    margin-top: 20px;
+}
+.copyright {
+    color: grey;
+    font-size: 0.6rem;
+    margin-top: 15px;
+}
